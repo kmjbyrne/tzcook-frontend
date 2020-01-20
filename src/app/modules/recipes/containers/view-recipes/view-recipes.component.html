@@ -1,0 +1,8 @@
+<h1>All Recipes</h1>
+<div class="" *ngFor="let item of data">
+    <div class="">
+        <h3>{{ item.name }}</h3>
+        <a [routerLink]="['/recipe/', item.id]">{{ item.id }}</a>
+        <div [innerHTML]="item.method"></div>
+    </div>
+</div>
